@@ -1,0 +1,5 @@
+server {
+  listen *:80;
+  root /var/www/html;
+  access_log syslog:server=___SYSLOG_SERVER_ADDRESS___:514,facility=local7,tag=nginx_static,severity=info combined;
+}
